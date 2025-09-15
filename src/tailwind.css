@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Starlight overrides */
+:root {
+  --sl-font: "Manrope", system-ui, sans-serif;
+  --sl-font-mono: "JetBrains Mono", "Courier New", monospace;
+
+  /* Override Starlight's accent colors to use our primary color */
+  --sl-color-accent-low: #f3e8ff;
+  --sl-color-accent: #874fff;
+  --sl-color-accent-high: #4c1d95;
+
+  /* Override link colors specifically */
+  --sl-color-text-accent: #874fff;
+}
+
+/* Custom component styles */
+.hero-section {
+  @apply bg-gradient-to-br from-primary-50 to-white;
+}
+
+.card-grid {
+  @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.nav-card {
+  @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-gray-200;
+}
+
+.nav-card h3 {
+  @apply text-xl font-semibold text-primary-600 mb-3;
+}
+
+.nav-card p {
+  @apply text-gray-600 mb-4;
+}
+
+.nav-card a {
+  @apply text-primary-600 hover:text-primary-900 font-medium inline-flex items-center;
+}
+
+/* Dutch language specific styles */
+html[lang="nl-NL"] .starlight-aside--note {
+  --sl-aside-title: "Opmerking";
+}
+
+html[lang="nl-NL"] .starlight-aside--tip {
+  --sl-aside-title: "Tip";
+}
+
+html[lang="nl-NL"] .starlight-aside--caution {
+  --sl-aside-title: "Let op";
+}
+
+html[lang="nl-NL"] .starlight-aside--danger {
+  --sl-aside-title: "Waarschuwing";
+}
+
+/* Target Starlight hero action buttons directly */
+.hero .action.primary,
+.action.primary {
+  background-color: #874fff !important;
+  color: white !important;
+  border: none !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero .action.primary *,
+.action.primary * {
+  color: white !important;
+}
+
+.hero .action.primary:hover,
+.action.primary:hover {
+  background-color: #7c3aed !important;
+  color: white !important;
+}
+
+.hero .action.primary:hover *,
+.action.primary:hover * {
+  color: white !important;
+}
+
+/* Content links die een paarse kleur moeten krijgen */
+.sl-markdown-content a:not(:where(.not-content *)) {
+  color: #874fff !important;
+}
+.sl-markdown-content a:not(:where(.not-content *)):hover {
+  color: #c084fc !important;
+}
+a:where(.astro-ms4ia373)[aria-current="true"] {
+  color: #874fff !important;
+}
+a:where(.astro-ms4ia373)[aria-current="true"]:hover {
+  color: #c084fc !important;
+}
+
+/* Behoud de originele styling van de minimal buttons, maar maak de tekst paars */
+.hero .action.minimal,
+.action.minimal {
+  background-color: transparent !important;
+  color: #874fff !important;
+}
+
+.hero .action.minimal:hover,
+.action.minimal:hover {
+  color: #5b21b6 !important;
+  text-decoration: underline;
+  text-decoration-color: #5b21b6 !important;
+}
+
+/* Fix sidebar navigation active state color */
+:where(.astro-g7wopwfa)[aria-current="page"],
+:where(.astro-g7wopwfa)[aria-current="page"]:hover,
+:where(.astro-g7wopwfa)[aria-current="page"]:focus {
+  font-weight: 600;
+  color: #874fff !important;
+  background-color: rgba(135, 79, 255, 0.1) !important;
+}
+
+/* Kleine links krijgen alleen paarse kleur bij hover, maar niet als ze in een large container zitten */
+.astro-g7wopwfa:hover {
+  color: #874fff !important;
+}
+.large:where(.astro-g7wopwfa),
+.large:where(.astro-g7wopwfa):hover {
+  color: black !important;
+}
+.caret:where(.astro-g7wopwfa) {
+  color: #874fff !important;
+}
+
+/* Vorige en Volgende krijgen een paarse lijn */
+a:where(.astro-wbppxj44) {
+  border: 1px solid #d8b4fe;
+}
+a:where(.astro-wbppxj44):hover {
+  border: 1px solid #874fff;
+}
+svg:where(.astro-wbppxj44) {
+  color: #874fff;
+}
