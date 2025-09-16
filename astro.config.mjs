@@ -29,10 +29,6 @@ export default defineConfig({
               label: "Fieldresearch",
               link: "/onderzoek/fieldresearch/",
             },
-            {
-              label: "Fieldresearch Copy",
-              link: "/onderzoek/fieldresearch-copy/",
-            },
           ],
         },
         {

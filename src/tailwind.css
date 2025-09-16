@@ -129,6 +129,10 @@ a:where(.astro-ms4ia373)[aria-current="true"]:hover {
 .large:where(.astro-g7wopwfa):hover {
   color: black !important;
 }
+[data-theme="dark"] .large:where(.astro-g7wopwfa),
+[data-theme="dark"] .large:where(.astro-g7wopwfa):hover {
+  color: white !important;
+}
 .caret:where(.astro-g7wopwfa) {
   color: #874fff !important;
 }
@@ -142,4 +146,10 @@ a:where(.astro-wbppxj44):hover {
 }
 svg:where(.astro-wbppxj44) {
   color: #874fff;
+}
+
+/* Tab items krijgen een paarse kleur */
+.tab:where(.astro-7p5jh7km)
+  :where(.astro-7p5jh7km)[role="tab"][aria-selected="true"] {
+  border-color: #874fff;
 }

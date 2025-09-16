@@ -1,35 +1,10 @@
 ---
-title: Concepting
+title: Introductie
 description: Ideegeneratie, conceptontwikkeling en validatie voor SALVE
 ---
 
-Deze fase richt zich op het genereren en uitwerken van concepten voor SALVE.
+Tijdens de framingfase heb ik met behulp van verschillende methodes inzicht gekregen in de kernproblemen binnen het huidige onboardingproces. Door middel van onder andere de Design Gap, Value Proposition, Jobs To Be Done en Why–How Laddering heb ik structureel gekeken naar wat gebruikers écht nodig hebben, waarom dat belangrijk is, en op welke punten het huidige systeem tekortschiet.
 
-## Ideegeneratie
+Daarnaast heb ik metaforen opgesteld om abstracte problemen concreter te maken, en ben ik vanuit die inzichten gaan werken aan het formuleren van How Might We vragen. Deze heb ik vervolgens samengebracht in één overkoepelende Design Challenge die richting geeft aan de conceptfase.
 
-Methoden en technieken gebruikt voor het bedenken van oplossingen:
-
-- Brainstormsessies
-- Mind mapping
-- Benchmarkanalyse
-- User journey mapping
-
-## Conceptontwikkeling
-
-Uitwerking van de meest veelbelovende ideeën tot concrete concepten.
-
-## Validatie
-
-Testen en valideren van concepten met stakeholders en doelgroep:
-
-- Prototype testing
-- User feedback sessies
-- Stakeholder reviews
-- Feasibility analyse
-
-## Deliverables
-
-- Concept documenten
-- Prototypes (low-fi/high-fi)
-- Validatie rapporten
-- Concept selectie matrix
+Omdat er al veel pijnpunten, behoeften en oplossingsrichtingen zijn blootgelegd, vormt deze framingfase niet alleen een goede inhoudelijke basis, maar is er ook al een groot deel van het denkwerk voor het concepten gedaan.
