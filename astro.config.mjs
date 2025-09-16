@@ -7,12 +7,10 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "SALVE Docs",
-      defaultLocale: "nl",
-      locales: {
-        nl: {
-          label: "Nederlands",
-          lang: "nl-NL",
-        },
+      logo: {
+        light: "./src/assets/logo-light.svg",
+        dark: "./src/assets/logo-dark.svg",
+        replacesTitle: true,
       },
       social: {
         github: "https://github.com/Wipse/salve-docs",
@@ -70,7 +68,20 @@ export default defineConfig({
         },
         {
           label: "Concepting",
-          autogenerate: { directory: "Concepting" },
+          items: [
+            {
+              label: "Introductie",
+              link: "/concepting",
+            },
+            {
+              label: "Value Proposition 2.0",
+              link: "/concepting/value-proposition/",
+            },
+            {
+              label: "Unique Selling Points",
+              link: "/concepting/usps/",
+            },
+          ],
         },
         {
           label: "Design",
@@ -82,10 +93,6 @@ export default defineConfig({
         },
       ],
       customCss: ["./src/tailwind.css"],
-      components: {
-        // Override the default Starlight components to use custom logo
-        SiteTitle: "./src/components/SiteTitle.astro",
-      },
       editLink: {
         baseUrl: "https://github.com/wisseheida/salve-docs/edit/main/",
       },
