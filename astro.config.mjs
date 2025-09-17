@@ -84,6 +84,7 @@ export default defineConfig({
             {
               label: "MoSCoW Methode",
               link: "/concepting/moscow/",
+              badge: { text: "New", variant: "tip" },
             },
           ],
         },
