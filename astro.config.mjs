@@ -81,6 +81,10 @@ export default defineConfig({
               label: "Unique Selling Points",
               link: "/concepting/usps/",
             },
+            {
+              label: "MoSCoW Methode",
+              link: "/concepting/moscow/",
+            },
           ],
         },
         {
