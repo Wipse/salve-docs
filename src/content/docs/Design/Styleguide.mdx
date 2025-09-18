@@ -1,0 +1,241 @@
+---
+title: Styleguide
+description: De onderbouwing van de styleguide voor SALVE
+---
+
+import { Card, Aside } from "@astrojs/starlight/components";
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+Voor SALVE is een uitgebreide styleguide opgesteld waarin de visuele en inhoudelijke
+identiteit van het platform wordt vastgelegd. Hierbij is nagedacht over zeven
+verschillende onderdelen:
+
+- Kleurgebruik
+- Typografie
+- Iconografie
+- Vormgebruik
+- Tone of Voice
+- Illustratiestijl
+- Componentenstijl
+
+Elk van deze keuzes is zorgvuldig onderbouwd, zodat er niet alleen een consistente
+uitstraling ontstaat, maar ook een stijl die aansluit bij de doelstelling van SALVE:
+een vriendelijk, toegankelijk en professioneel onboardingplatform. In de volgende
+paragrafen worden de overwegingen en argumenten per onderdeel toegelicht.
+
+### Kleurgebruik
+
+Tijdens het framingsproces had was er nog geen specifieke kleur bedacht. Algemeen is
+bekend dat kleuren bepaalde gevoelens kunnen oproepen, en daarom is er gekeken naar
+welke kleuren passen bij de kernwaarden van SALVE.
+
+Zo ontstonden de volgende associaties:
+
+- Structuur → <span style="color: #3DADFF;">**Blauw**</span>
+- Ondersteuning → <span style="color: #3DADFF;">**Blauw**</span>
+- Vertrouwen → <span style="color: #3DADFF;">**Blauw**</span>
+- Actie → <span style="color: red;">**Rood**</span>
+- Energie → <span style="color: red;">**Rood**</span>
+- Systematisch → <span style="color: gray;">**Grijs**</span>
+
+Hieruit viel op dat vooral blauw en rood steeds terugkomen. Blauw staat voor duidelijkheid,
+rust en betrouwbaarheid, iets wat belangrijk is tijdens het onboardingproces. Rood staat
+juist voor actie, energie en vooruitgang, wat aansluit bij het in beweging zetten van
+nieuwe medewerkers.
+
+Omdat SALVE draait om de balans tussen die twee dingen, is ervoor gekozen om deze twee
+kleuren te combineren tot <span style="color: #874fff;">**paars**</span>.
+
+Echter zijn er meerdere kleuren paars. Om de juiste paarstint te vinden, zijn er een aantal
+onder elkaar gezet om te kijken welke het meest resoneert met de kernwaarden van SALVE.
+
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+  <div style="background-color: #DDD6FE; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+    <p style="color: black; margin: 0; font-weight: 600;">Lila mist - #DDD6FE</p>
+  </div>
+
+<div style="background-color: #C4B5FD; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: black; margin: 0; font-weight: 600;">Lavendel - #C4B5FD</p>
+</div>
+
+<div style="background-color: #A5B4FC; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: black; margin: 0; font-weight: 600;">Periwinkle - #A5B4FC</p>
+</div>
+
+<div style="background-color: #8B5CF6; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: white; margin: 0; font-weight: 600;">Violet - #8B5CF6</p>
+</div>
+
+<div style="background-color: #874FFF; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: white; margin: 0; font-weight: 600;">Heliotrope - #874FFF</p>
+</div>
+
+<div style="background-color: #6A5ACD; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: white; margin: 0; font-weight: 600;">Slate Blue - #6A5ACD</p>
+</div>
+
+<div style="background-color: #6366F1; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: white; margin: 0; font-weight: 600;">Indigo - #6366F1</p>
+</div>
+
+<div style="background-color: #7D4C92; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: white; margin: 0; font-weight: 600;">Plum - #7D4C92</p>
+</div>
+
+{/* prettier-ignore */}
+<div style="background-color: #6B21A8; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: white; margin: 0; font-weight: 600;">Deep Purple - #6B21A8</p>
+</div>
+
+{/* prettier-ignore */}
+<div style="background-color: #5B21B6; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+  <p style="color: white; margin: 0; font-weight: 600;">Royal Purple - #5B21B6 </p>
+</div>
+
+  <div style="background-color: #4B0082; padding: 12px; width: 16rem; border-radius: 24px; margin: 8px 0; text-align: center;">
+    <p style="color: white; margin: 0; font-weight: 600;">Aubergine - #4B0082</p>
+  </div>
+</div>
+
+Uiteindelijk is er voor <span style="color: #874fff;">**Heliotrope**</span> gekozen, omdat dit met wit
+een strakke, moderne uitstraling geeft, en daarnaast veel lichtere en donkere varianten heeft die
+een goed kleurenpalet vormen.
+
+### Typografie
+
+Tijdens het nadenken over designkeuzes, werd er niet alleen gekeken naar kleuren, maar ook naar
+typografie. Een lettertype bepaalt in grote mate hoe een platform ademt, bijvoorbeeld van
+zakelijk en afstandelijk tot warm en ondersteunend.
+
+Het platform is te omschrijven als
+
+- Professioneel, maar toegankelijk
+- Rustgevend en gestructureerd
+- Ondersteunend, niet dominant
+- Innovatief, maar betrouwbaar
+
+Kortom moest er dus een speels lettertype hebben zoals Comic Sans, maar ook geen kil font
+zoals Helvetica. Er is gezocht naar een balans tussen deze twee.
+
+<Card title="Inter">
+  <p style="font-family: Inter, sans-serif; font-size: 14px; margin-top: -32px; font-weight: 500;">
+    Sans-serif, neutral
+  </p>
+  <p style="font-family: Inter, sans-serif; font-size: 14px; margin: 0 0 20px 0; line-height: 1.5;">
+    Inter is een modern sans-serif met een{" "}
+    <strong>lichte geometrische feel</strong>, subtiele ronde hoeken en daardoor
+    een vriendelijke en benaderbare uitstraling. Door de meerdere gewichten,
+    zoals Bold, kun je het goed gebruiken voor nadruk en het creëren van
+    hiërarchie. De brede x-height en open lettervormen zorgen voor meer
+    leesbaarheid en visuele rust.
+  </p>
+  <p style="font-family: Inter, sans-serif; font-size: 13px;">
+    Door dit alles wordt het dan ook veel gebruikt in moderne UI.
+  </p>
+  <div style="border-left: 4px solid #874FFF; padding-left: 16px; margin: 16px 0;">
+    <p style="font-family: Inter, sans-serif; font-size: 18px; margin: 0; font-weight: 400;">
+      Dit is het lettertype Inter
+    </p>
+    <p style="font-family: Inter, sans-serif; font-size: 18px; margin-top: -16px; font-weight: 700;">
+      Dit is het lettertype Inter
+    </p>
+  </div>
+</Card>
+
+<Card title="Manrope">
+  <p style="font-family: 'Manrope', sans-serif; font-size: 14px; margin-top: -32px; font-weight: 500;">
+    Geometrisch, maar warm
+  </p>
+  <p style="font-family: 'Manrope', sans-serif; font-size: 14px; margin: 0 0 20px 0; line-height: 1.5;">
+    Manrope is een strak en eigentijds geometrisch sans-serif lettertype. Het{" "}
+    <strong>combineert minimalisme met zachte rondingen</strong>, waardoor het
+    modern maar niet afstandelijk aanvoelt. De hoge x-height en brede spatiëring
+    zorgen voor <strong>goede leesbaarheid</strong>, terwijl de verschillende
+    gewichten het geschikt maken voor hiërarchische opbouw in UI-design.
+  </p>
+  <p style="font-family: 'Manrope', sans-serif; font-size: 13px;">
+    Dit is dan ook één van de <strong>meest voorkomende lettertypes</strong> in
+    UI
+  </p>
+  <div style="border-left: 4px solid #874FFF; padding-left: 16px; margin: 16px 0;">
+    <p style="font-family: 'Manrope', sans-serif; font-size: 18px; font-weight: 400;">
+      Dit is het lettertype Manrope
+    </p>
+    <p style="font-family: 'Manrope', sans-serif; font-size: 18px; font-weight: 700; margin-top: -16px;">
+      Dit is het lettertype Manrope
+    </p>
+  </div>
+</Card>
+
+<Card title="IBM Plex Sans">
+  <p style="font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; margin-top: -32px; font-weight: 500;">
+    Humanist, techy edge
+  </p>
+  <p style="font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; margin: 0 0 20px 0; line-height: 1.5;">
+    IBM Plex Sans is een modern humanist sans-serif met een{" "}
+    <strong>lichte technische uitstraling</strong>. Door de open vormen en ruime
+    x-height is het goed leesbaar en visueel stabiel. De{" "}
+    <strong>subtiele hoeken</strong> geven het een professionele maar
+    toegankelijke uitstraling. Dankzij de <strong>brede gewichten</strong> is
+    het goed bruikbaar in hiërarchie en accenten in moderne UI.
+  </p>
+  <div style="border-left: 4px solid #874FFF; padding-left: 16px; margin: 16px 0;">
+    <p style="font-family: 'IBM Plex Sans', sans-serif; font-size: 18px; margin: 0; font-weight: 400;">
+      Dit is het lettertype IBM Plex Sans
+    </p>
+    <p style="font-family: 'IBM Plex Sans', sans-serif; font-size: 18px; margin-top: -16px; font-weight: 700;">
+      Dit is het lettertype IBM Plex Sans
+    </p>
+  </div>
+</Card>
+
+<Card title="Source Sans Pro">
+  <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 14px; margin-top: -32px; font-weight: 500;">
+    Simpel en betrouwbaar
+  </p>
+  <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 14px; line-height: 1.5;">
+    Source Sans Pro is een neutraal en betrouwbaar sans-serif lettertype,{" "}
+    <strong>ontworpen voor digitale interfaces</strong>. De open vormen en{" "}
+    <strong>hoge x-height</strong> zorgen voor{" "}
+    <strong>uitstekende leesbaarheid</strong>, ook in kleinere maten. Het voelt{" "}
+    <strong>professioneel en nuchter</strong> aan, en is door de neutrale
+    gewichten uitstekend in hiërarchie en toegankelijke UI's.
+  </p>
+  <div style="border-left: 4px solid #874FFF; padding-left: 16px; margin: 16px 0;">
+    <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; margin: 0; font-weight: 400;">
+      Dit is het lettertype Source Sans Pro
+    </p>
+    <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; margin-top: -16px; font-weight: 700;">
+      Dit is het lettertype Source Sans Pro
+    </p>
+  </div>
+</Card>
+
+<Card title="Work Sans">
+  <p style="font-family: 'Work Sans', sans-serif; font-size: 14px; margin-top: -32px; font-weight: 500;">
+    Licht en vriendelijk
+  </p>
+  <p style="font-family: 'Work Sans', sans-serif; font-size: 14px; margin: 0 0 20px 0; line-height: 1.5;">
+    Work Sans is een vriendelijk en modern sans-serif lettertype met een{" "}
+    <strong>zachte, afgeronde uitstraling</strong>. Het is{" "}
+    <strong>geoptimaliseerd voor schermgebruik</strong>, met een hoge x-height
+    en open vormen die zorgen voor rust en leesbaarheid. De verschillende
+    gewichten maken het{" "}
+    <strong>geschikt voor zowel bodytekst als opvallende accenten</strong>{" "}
+    binnen een toegankelijke UI.
+  </p>
+  <div style="border-left: 4px solid #874FFF; padding-left: 16px; margin: 16px 0;">
+    <p style="font-family: 'Work Sans', sans-serif; font-size: 18px; margin: 0; font-weight: 400;">
+      Dit is het lettertype Work Sans
+    </p>
+    <p style="font-family: 'Work Sans', sans-serif; font-size: 18px; margin-top: -16px; font-weight: 700;">
+      Dit is het lettertype Work Sans
+    </p>
+  </div>
+</Card>

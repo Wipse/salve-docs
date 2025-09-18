@@ -90,7 +90,17 @@ export default defineConfig({
         },
         {
           label: "Design",
-          autogenerate: { directory: "Design" },
+          items: [
+            {
+              label: "Introductie",
+              link: "/design",
+            },
+            {
+              label: "Styleguide",
+              link: "/design/styleguide/",
+              badge: { text: "New", variant: "tip" },
+            },
+          ],
         },
         {
           label: "Development",
