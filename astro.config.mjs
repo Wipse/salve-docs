@@ -86,6 +86,11 @@ export default defineConfig({
               link: "/concepting/moscow/",
               badge: { text: "New", variant: "tip" },
             },
+            {
+              label: "Naam",
+              link: "/concepting/naam/",
+              badge: { text: "New", variant: "tip" },
+            },
           ],
         },
         {
